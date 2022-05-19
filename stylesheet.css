@@ -1,0 +1,23 @@
+/* Navigation */
+header {
+    padding: 40px 0px;
+
+}
+
+nav {
+    padding-right: 80px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+ nav>a {
+     margin:20px;
+ }
+
+/* Footer */
+footer >section > div > a {
+    text-decoration: none;
+    color:black;
+    font-family: 'Roboto Flex', sans-serif;
+    
+}
