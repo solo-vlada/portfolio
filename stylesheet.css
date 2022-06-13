@@ -1,4 +1,12 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display:block;
+}
 /* Navigation */
+
 header {
     padding: 40px 0px;
 
@@ -11,13 +19,141 @@ nav {
 
 }
  nav>a {
+     text-decoration: none;
+     font-family: 'Roboto Flex', sans-serif;
+     color: rgb(181, 181, 181);
+     font-size: 18px;
      margin:20px;
  }
+ 
+ nav>a:hover{
+    text-decoration: none;
+    font-family: 'Roboto Flex', sans-serif;
+    color: rgb(85,26,139);
+    font-size: 18px;
+    margin: 20px;
+}
 
 /* Footer */
 footer >section > div > a {
     text-decoration: none;
     color:black;
+    font-size: 18px;
     font-family: 'Roboto Flex', sans-serif;
     
 }
+
+footer >section > div > a:hover {
+    text-decoration: underline rgb(255, 232, 220);
+    text-decoration-thickness: 25%; 
+    font-size: 18px;
+    color:black;
+    font-family: 'Roboto Flex', sans-serif;
+    
+}
+
+.offset-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    margin-left: 15%;
+}
+
+main{
+    background-color: rgb(255, 232, 220);
+}
+
+.offset-container-inner{
+    padding: 80px 160px 80px 80px;
+
+}
+
+.offset-container-outer{
+    margin-left:80px;
+
+}
+
+.offset-container::before {
+    width: 200px;
+}
+
+main > div > section {
+    padding: 80px;  
+}
+
+
+p.text{
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding-left: 40px;
+
+
+}
+
+h1{
+    padding-top: 40px;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 400;
+}
+
+section > div > div > a {
+    text-decoration: none;
+    color:rgb(33, 37, 41);
+}
+
+section > div > div > a:hover {
+    text-decoration: none;
+    color:rgb(85,26,139);
+
+}
+
+img{
+    display: block;
+    width:100%;
+}
+
+@media only screen and (max-width: 980px){
+  nav{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+  }
+    main{
+        width: 80%;
+
+    }
+
+    .offset-container{
+        margin:auto;
+
+    }
+    .offset-container-outer{
+        margin:auto;
+    }
+
+    .offset-container-inner{
+        padding: 0;
+    }
+    .media-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    p.text{
+        padding: 20px;
+        font-size: 18px;
+    }
+
+   #position{
+        position: relative !important;
+        text-align: center;
+    }
+
+}
+
