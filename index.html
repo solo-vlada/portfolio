@@ -16,15 +16,15 @@
 <body>
     <header class="container">
         <nav>
-            <a href="./about.html">About Me</a>
-            <a href="./experience.html">Experience & Education</a>
-            <a href="./contact.html">Contact</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
     <div class="offset-container position-relative">
     <main class="offset-container-outer">
     <div class="offset-container-inner">
-        <section>
+        <section id="about">
                 <div>
                     <h1 class="position-absolute top-0 start-0" id="position">Vladyslava Solomiana</h1>
                 </div>
@@ -37,7 +37,7 @@
                     </div>
                 </div>
         </section>
-<section>
+<section id="projects">
         <div class="pb-3">
         <h2>Projects</h2>
         </div>
@@ -56,6 +56,20 @@
 </div>
 </main>
 </div>
+<section id="contact" class="container">
+    <div>
+        <h2>Contact Me</h2>
+        <form action ="#">
+        <label for="fname">Full name</label>  
+        <input type="text" id="fname" placeholder="Name">
+        <label for="email"> Email adress</label>
+        <input type="email" id="email" placeholder="Email">
+        <label type="text" id="message">Message</label>
+        <input type="text" id="message" placeholder="Write to me">
+        <input type="submit" value="Submit">
+        </form>
+    </div>
+</section>
  <div class= "offset-container">
     <div class = "offset-cointainer-outer">
         <div class="container">
